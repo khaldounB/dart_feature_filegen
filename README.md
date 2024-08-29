@@ -1,21 +1,19 @@
-# Dart Json Filegen
+# dart_feature_filegen
 
-[![Pub Version](https://img.shields.io/pub/v/your_package_name.svg)](https://pub.dev/packages/your_package_name)
-
-## Overview
-
-`dart_json_filegen` is a Dart package that generates Dart files from a JSON structure. This package automates the creation of Dart classes with JSON serialization support, making it easier to work with JSON data in your Flutter or Dart projects.
+A Dart package that helps you generate feature folders and files for Flutter projects.
 
 ## Features
 
-- **Automatic Dart class generation**: Convert JSON structures into Dart classes with the necessary fields and constructors.
-- **JSON serialization**: Generates `.g.dart` files for JSON serialization using `json_serializable`.
-- **Customizable output**: Specify the output path, file name, class name, and more.
+- Automatically creates the folder structure for a new feature.
+- Generates initial files for providers, web services, repository, and UI screens.
+- Integrates with `build_runner` to generate `.g.dart` files for JSON serialization.
 
 ## Installation
 
-Add the following to your `pubspec.yaml` file:
+Add `dart_feature_filegen` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  your_package_name: ^1.0.0
+  dart_feature_filegen:
+    git:
+      url: https://github.com/khaldounB/dart_feature_filegen.git
