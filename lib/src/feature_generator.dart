@@ -4,8 +4,8 @@ import 'dart:io';
 ///
 /// This function creates directories and files with initial boilerplate code
 /// for a specified feature name.
-Future<void> generateFeature(String featureName,String app) async {
-  final featurePath = 'lib/$app/features/$featureName';
+Future<void> generateFeature(String featureName) async {
+  final featurePath = 'lib/features/$featureName';
 
   // Define the folder structure
   final directories = [
