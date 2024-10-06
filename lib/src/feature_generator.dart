@@ -57,10 +57,9 @@ class ${_capitalize(featureName)}Repo {
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../core/classes/responsive.dart';
 import '../../providers/${featureName}_provider.dart';
 
-class ${_capitalize(featureName)}Screen extends StatelessWidget with Responsive {
+class ${_capitalize(featureName)}Screen extends StatelessWidget {
   const ${_capitalize(featureName)}Screen({super.key});
 
   @override
