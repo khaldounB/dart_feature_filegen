@@ -117,7 +117,7 @@ Future<void> _runBuildRunner() async {
   print('${resetColor}Running build_runner to generate .g.dart file...');
   final result = await Process.run(
     'dart',
-    ['run', 'build_runner', 'build'],
+    ['run', 'build_runner', 'build', '--delete-conflicting-outputs'],
     workingDirectory: Directory.current.path,
   );
 
