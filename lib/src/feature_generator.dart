@@ -51,7 +51,8 @@ class ${_capitalize(featureName)}Repo {
 
   ${_capitalize(featureName)}Repo._internal();
 
-  // Add methods to interact with the web services
+  static final ${_capitalize(featureName)}WebServices = _${featureName} =
+  ${_capitalize(featureName)}WebServices(RequestConfiguration.dio);
 }
 ''',
     '$featurePath/ui/screens/${featureName}_screen.dart': '''
