@@ -41,6 +41,7 @@ abstract class ${_capitalize(featureName)}WebServices {
 ''',
     '$featurePath/repo/${featureName}_repo.dart': '''
 import '../web_services/${featureName}_web_services.dart';
+import '../../../core/constants/server/request_configuration.dart';
 
 class ${_capitalize(featureName)}Repo {
   static final ${_capitalize(featureName)}Repo _${featureName}Repo = ${_capitalize(featureName)}Repo._internal();
@@ -51,7 +52,7 @@ class ${_capitalize(featureName)}Repo {
 
   ${_capitalize(featureName)}Repo._internal();
 
-  static final ${_capitalize(featureName)}WebServices = _${featureName} =
+  static final ${_capitalize(featureName)}WebServices _${featureName} =
   ${_capitalize(featureName)}WebServices(RequestConfiguration.dio);
 }
 ''',
