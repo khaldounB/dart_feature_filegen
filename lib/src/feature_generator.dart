@@ -27,6 +27,7 @@ class ${_capitalize(featureName)}Provider extends ChangeNotifier {}
 ''',
     '$featurePath/web_services/${featureName}_web_services.dart': '''
 import 'package:dio/dio.dart';
+import 'package:retrofit/error_logger.dart';
 import '../../../core/constants/server/end_points.dart';
 import '../../../core/utils/base_model/base_model.dart';
 import 'package:retrofit/http.dart';
