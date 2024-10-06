@@ -34,7 +34,7 @@ import 'package:retrofit/http.dart';
 
 part '${featureName}_web_services.g.dart';
 
-@RestApi(baseUrl: '')
+@RestApi(baseUrl: EndPoints.host)
 abstract class ${_capitalize(featureName)}WebServices {
   factory ${_capitalize(featureName)}WebServices(Dio dio) = _${_capitalize(featureName)}WebServices;
 }
